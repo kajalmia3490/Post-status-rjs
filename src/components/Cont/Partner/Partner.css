@@ -1,0 +1,159 @@
+.partner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px;
+    gap: 3rem;
+    background-color: whitesmoke;
+}
+
+.h2 {
+    font-size: 25px;
+}
+
+.left-partner {
+    width: 100%;
+}
+
+.left-partner img {
+    width: 80px;
+    float: right;
+}
+
+.right-partner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+
+}
+
+/* sub partner */
+.sub-partner {
+    text-align: center;
+    margin: 100px 250px;
+}
+
+.heading3 {
+    font-size: 30px;
+}
+
+.sub-partner img {
+    width: 80px;
+}
+
+/* responsive */
+/* Common styles for all screen sizes */
+.partner {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 2rem;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 20px;
+}
+
+.right-partner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text-logo img {
+    width: 120px;
+    margin: 0 auto 20px;
+}
+
+.sub-partner {
+    margin: 50px;
+}
+
+.heading3 {
+    font-size: 24px;
+}
+
+.sub-partner img {
+    width: 60px;
+    margin: 20px auto;
+}
+
+/* for smart devices */
+@media (min-width: 320px) and (max-width: 767px) {
+    .left-partner img {
+        display: none;
+    }
+}
+
+/* Adjustments for medium-sized screens */
+@media (min-width: 768px) {
+    .partner {
+        flex-direction: row;
+        text-align: left;
+    }
+
+
+
+    .left-partner,
+    .right-partner {
+        width: 50%;
+    }
+
+    .left-partner img {
+        width: 70px;
+    }
+
+    .text-logo img {
+        width: 140px;
+        margin: 0;
+    }
+
+    .sub-partner {
+        margin: 100px 100px;
+    }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 1200px) {
+    .partner {
+        padding: 100px;
+        gap: 3rem;
+    }
+
+    .h2 {
+        font-size: 25px;
+    }
+
+    .left-partner img {
+        width: 80px;
+    }
+
+    .right-partner {
+        flex-direction: row;
+    }
+
+    .text-logo img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .sub-partner {
+        margin: 100px 250px;
+    }
+
+    .heading3 {
+        font-size: 30px;
+    }
+
+    .sub-partner img {
+        width: 80px;
+    }
+}

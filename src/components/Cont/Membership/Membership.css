@@ -1,0 +1,174 @@
+.container .describe-section .left-side {
+    border-bottom: 4px solid blue;
+}
+
+.container .describe-section .right-side {
+    border-bottom: 4px solid blue;
+}
+
+.membership-section {
+    text-align: center;
+    margin: 50px 100px;
+}
+
+.topic {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.heading-para {
+    font-size: large;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+span {
+    color: blue;
+}
+
+.membership-section img {
+    width: 100px;
+    margin: 20px 0;
+}
+
+/* describe section */
+.describe-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px;
+    gap: 3rem;
+    font-size: large;
+}
+
+.describe-section .left-side {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px 40px;
+    border-radius: 10px;
+
+}
+
+.describe-section .right-side {
+    width: 80%;
+    border: 1px solid gray;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.h1 {
+    font-size: 30px;
+}
+
+.subtitle {
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+ul {
+    line-height: 30px;
+}
+
+p .button1 {
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: large;
+}
+
+p .button2 {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: large;
+}
+
+p .button1:hover {
+    background-color: black;
+}
+
+p .button2:hover {
+    color: white;
+    background-color: black;
+}
+
+/* responsive */
+/* Common styles for all screen sizes */
+.describe-section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 2rem;
+}
+
+.describe-section .left-side,
+.describe-section .right-side {
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.h1 {
+    font-size: 24px;
+}
+
+.subtitle {
+    margin: 10px 0;
+}
+
+ul {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.button1,
+.button2 {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Adjustments for medium-sized screens */
+@media (min-width: 768px) {
+    .describe-section {
+        flex-direction: row;
+    }
+
+    .describe-section .left-side,
+    .describe-section .right-side {
+        width: 50%;
+    }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 1200px) {
+    .describe-section {
+        margin: 50px;
+    }
+
+    .describe-section .left-side,
+    .describe-section .right-side {
+        width: 45%;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        margin: 20px 0;
+    }
+
+    ul {
+        margin: 20px 0;
+    }
+
+    .button1,
+    .button2 {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+}

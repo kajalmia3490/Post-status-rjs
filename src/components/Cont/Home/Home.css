@@ -1,0 +1,128 @@
+/* left side */
+.home-content {
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid blue;
+}
+
+.heading .h1 {
+    font-size: 40px;
+    width: 100%;
+}
+
+span {
+    color: blue;
+}
+
+.para {
+    font-size: large;
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.join-btn {
+    padding: 10px 30px;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.join-btn:hover {
+    background-color: black;
+}
+
+.arrow-icon {
+    width: 100px;
+}
+
+/* right side */
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+.image img {
+    width: 300px;
+}
+
+/* logo section */
+.logo-section {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+.logo-section img {
+    width: 130px;
+}
+
+/* responsive with css */
+/* Common styles for all screen sizes */
+.home-content {
+    padding: 50px; /* Adjust the padding for smaller screens */
+    flex-direction: column; /* Stack content vertically on small screens */
+}
+
+.heading .h1 {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center the heading on small screens */
+}
+
+/* Adjustments for medium-sized screens */
+@media (min-width: 768px) {
+    .home-content {
+        padding: 100px;
+        flex-direction: row;
+    }
+
+    .heading .h1 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .para {
+        font-size: medium;
+    }
+
+    .join-btn {
+        padding: 10px 20px;
+        font-size: medium;
+    }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 1200px) {
+    .home-content {
+        padding: 150px;
+    }
+
+    .para {
+        font-size: large;
+    }
+
+    .join-btn {
+        padding: 15px 30px;
+        font-size: large;
+    }
+}
+
+/* Common styles for all screen sizes */
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-section {
+    padding: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo-section img {
+    margin: 10px; /* Add some spacing between logo images */
+}

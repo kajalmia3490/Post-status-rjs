@@ -1,0 +1,149 @@
+.job-section {
+    padding: 150px 100px;
+    background-color: whitesmoke;
+}
+
+.jobs {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.jobs-left {
+    width: 60%;
+    text-align: justify;
+}
+
+.jobs-left img {
+    width: 50px;
+    float: right;
+}
+
+.jobs-btn {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: large;
+    border: none;
+    background-color: blue;
+}
+
+.jobs-right {
+    width: 100%;
+    border: 1px solid tomato;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.jobs-right table tr img {
+    width: 70px;
+    height: 70px ;
+    border-radius: 50%;
+}
+
+table tr td {
+    padding-left: 30px;
+    font-size: large;
+    font-weight: 500;
+    color: gray;
+}
+
+/* responsive */
+/* Common styles for all screen sizes */
+.job-section {
+    padding: 100px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.jobs {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.jobs-left {
+    width: 100%;
+    text-align: left;
+}
+
+.jobs-left img {
+    width: 40px;
+    float: none;
+    margin: 0;
+}
+
+.jobs-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.jobs-right {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.jobs-right table tr img {
+    width: 50px;
+    height: 50px;
+}
+
+table tr td {
+    padding-left: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Adjustments for medium-sized screens */
+@media (min-width: 768px) {
+    .job-section {
+        padding: 120px;
+    }
+
+    .jobs {
+        flex-direction: row;
+    }
+
+    .jobs-left {
+        width: 50%;
+    }
+
+    .jobs-btn {
+        font-size: 18px;
+    }
+
+    .jobs-right {
+        padding: 40px;
+    }
+
+    table tr td {
+        padding-left: 25px;
+        font-size: 16px;
+    }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 1200px) {
+    .job-section {
+        padding: 150px;
+    }
+
+    .jobs-left {
+        width: 60%;
+    }
+
+    .jobs-btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .jobs-right {
+        padding: 50px;
+    }
+
+    table tr td {
+        padding-left: 30px;
+        font-size: 18px;
+    }
+}

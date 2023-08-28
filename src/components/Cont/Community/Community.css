@@ -1,0 +1,135 @@
+.top {
+    text-align: center;
+}
+
+.community-header {
+    font-size: 25px;
+    margin: 80px 0 0 0;
+}
+
+.community-para {
+    font-size: large;
+    width: 600px;
+    margin: auto;
+    padding: 40px 0;
+    line-height: 30px;
+}
+
+.top img {
+    width: 80px;
+}
+
+.community-people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 80px 100px;
+    gap: 5rem;
+    border-bottom: 4px solid blue;
+}
+
+.community-people img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.people1, .people2, .people3, .people4 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.com-para {
+    line-height: 30px;
+    font-size: large;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* responsive */
+/* Common styles for all screen sizes */
+.top img {
+    width: 60px;
+}
+
+.community-people {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    gap: 3rem;
+    border-bottom: 2px solid blue;
+}
+
+.community-people img {
+    width: 90px;
+    height: 90px;
+}
+
+.people1,
+.people2,
+.people3,
+.people4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Adjustments for medium-sized screens */
+@media (min-width: 768px) {
+    .community-people {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 70px;
+        gap: 4rem;
+    }
+
+    .community-people img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .people1,
+    .people2,
+    .people3,
+    .people4 {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 1200px) {
+    .community-header {
+        font-size: 30px;
+        margin: 100px 0 0 0;
+    }
+
+    .community-para {
+        font-size: 18px;
+        width: 800px;
+        padding: 60px 0;
+    }
+
+    .top img {
+        width: 80px;
+    }
+
+    .community-people {
+        padding: 100px;
+    }
+
+    .community-people img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .com-para {
+        font-size: 18px;
+    }
+}

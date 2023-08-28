@@ -1,0 +1,95 @@
+.latest-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    line-height: 50px;
+    margin: 0 100px;
+}
+
+.latest-left,
+.latest-right {
+    width: 100%;
+}
+
+.latest-left a,
+.latest-right a {
+    font-size: large;
+    display: block;
+    color: black;
+    text-decoration: underline;
+}
+
+.latest-left a:hover,
+.latest-right a:hover {
+    text-decoration: none;
+}
+
+/* responsive */
+/* Common styles for all screen sizes */
+.latest-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    line-height: 40px;
+    margin: 20px;
+}
+
+.latest-left a,
+.latest-right a {
+    font-size: 16px;
+    color: black;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.latest-left a:hover,
+.latest-right a:hover {
+    text-decoration: none;
+}
+
+/* for smart devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+}
+
+/* Adjustments for medium-sized screens */
+@media (min-width: 768px) {
+    .latest-section {
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 50px;
+    }
+
+    .latest-left,
+    .latest-right {
+        width: 50%;
+    }
+
+    .latest-left a,
+    .latest-right a {
+        font-size: 18px;
+    }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 1200px) {
+    .latest-section {
+        padding: 40px;
+        line-height: 60px;
+        margin: 0 100px;
+    }
+
+    .latest-left,
+    .latest-right {
+        width: 50%;
+    }
+
+    .latest-left a,
+    .latest-right a {
+        font-size: 20px;
+    }
+}
